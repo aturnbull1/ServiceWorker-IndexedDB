@@ -14,7 +14,6 @@ self.addEventListener('install', function(event) {
     caches.open('simple-sw-v1').then(function(cache) {
       // And add resources to it
       return cache.addAll([
-        'jquery-2.1.4.min.js',
         'logging.js',
         'serviceworker-cache-polyfill.js'
       ]);
